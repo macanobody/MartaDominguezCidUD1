@@ -1,0 +1,52 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2818
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 using System.Collections;\
+using System.Collections.Generic;\
+using UnityEngine;\
+\
+public class Month : MonoBehaviour\
+\{\
+    [SerializeField]\
+    // Cambia este numero desde el Inspector\
+    private int MonthNumber = 1;\
+    private string MonthName = "";\
+\
+    // Start is called before the first frame update\
+    void Start()\
+    \{\
+        // Condicion multiple, segun el numero es el nombre del mes\
+\
+        switch (MonthNumber)\
+        \{\
+            case 1: MonthName = "Enero"; break;\
+            case 2: MonthName = "Febrero"; break;\
+            case 3: MonthName = "Marzo"; break;\
+            case 4: MonthName = "Abril"; break;\
+            case 5: MonthName = "Mayo"; break;\
+            case 6: MonthName = "Junio"; break;\
+            case 7: MonthName = "Julio"; break;\
+            case 8: MonthName = "Agosto"; break;\
+            case 9: MonthName = "Septiembre"; break;\
+            case 10: MonthName = "Octubre"; break;\
+            case 11: MonthName = "Noviembre"; break;\
+            case 12: MonthName = "Diciembre"; break;\
+            default: MonthName = "N?mero inv?lido"; break;\
+        \}\
+\
+        // Mostrar resultado en la consola\
+        Debug.Log("El mes es: " + MonthName);\
+    \}\
+\
+    // Update is called once per frame\
+    void Update()\
+    \{\
+        \
+    \}\
+\}\
+\
+}
